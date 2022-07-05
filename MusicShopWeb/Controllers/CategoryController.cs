@@ -17,6 +17,8 @@ namespace MusicShop.Controllers
             return View();
         }
 
+        public IActionResult Create() => View();
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
