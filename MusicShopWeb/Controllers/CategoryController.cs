@@ -14,7 +14,7 @@ namespace MusicShop.Controllers
         public IActionResult Index()
         {
             IEnumerable<Category> objCategoryList = _db.GetAll();
-            return View();
+            return View(objCategoryList);
         }
 
         public IActionResult Create() => View();
